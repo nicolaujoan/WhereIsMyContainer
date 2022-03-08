@@ -60,3 +60,19 @@ Finally, we will create our custom image from scratch (no at all). To do this, w
 So, let's create the Dockerfile and build and image from it:
 
 ![dockerfile_build](./images/5-dockerfile%26build.png)
+
+Now we are able to run a container from this image:
+
+![run](./images/6-run_image.png)
+
+And having the same result in out localhost:
+
+![result](./images/7-result.png)
+
+But our image now could be distributed to <a href="https://hub.docker.com/">dockerhub</a>
+
+Finally, can stop the container:
+
+![stop](./images/8-stopContainer.png)
+
+Notice the container has been deleted due to --rm option
