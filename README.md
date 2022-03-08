@@ -52,3 +52,11 @@ Our file is a custom form with some css and javascript to do the validation, as 
 ![volume-in-localhost](./images/4-form.png)
 
 <hr>
+
+### Third part:
+
+Finally, we will create our custom image from scratch (no at all). To do this, we will provide our custom welcome page to the index.html from Nginx. Because volumes are nice when working locally, but if a teammate needs to work with our custom image, building a Dockerfile is a better option.
+
+So, let's create the Dockerfile and build and image from it:
+
+![dockerfile_build](./images/5-dockerfile%26build.png)
