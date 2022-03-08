@@ -65,7 +65,7 @@ Now we are able to run a container from this image:
 
 ![run](./images/6-run_image.png)
 
-And having the same result in out localhost:
+And having the same result in our localhost:
 
 ![result](./images/7-result.png)
 
