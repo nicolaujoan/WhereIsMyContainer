@@ -65,7 +65,11 @@ Now we are able to run a container from this image:
 
 ![run](./images/6-run_image.png)
 
+<<<<<<< HEAD
 And having the same result in out localhost:
+=======
+And having the same result in our localhost:
+>>>>>>> 6bdbff7e2f0d77ab35771fa9aaab40a08d5dcf74
 
 ![result](./images/7-result.png)
 
@@ -76,6 +80,7 @@ Finally, can stop the container:
 ![stop](./images/8-stopContainer.png)
 
 Notice the container has been deleted due to --rm option
+<<<<<<< HEAD
 
 <hr>
 
@@ -113,3 +118,5 @@ $ docker run -d -p 80:80 <image name>
 and then we acces to our public ip generated in the azure portal and see the web page:
 
 ![page-up](./images/up.png)
+=======
+>>>>>>> 6bdbff7e2f0d77ab35771fa9aaab40a08d5dcf74
