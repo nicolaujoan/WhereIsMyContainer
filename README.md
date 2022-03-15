@@ -60,3 +60,56 @@ Finally, we will create our custom image from scratch (no at all). To do this, w
 So, let's create the Dockerfile and build and image from it:
 
 ![dockerfile_build](./images/5-dockerfile%26build.png)
+
+Now we are able to run a container from this image:
+
+![run](./images/6-run_image.png)
+
+And having the same result in out localhost:
+
+![result](./images/7-result.png)
+
+But our image now could be distributed to <a href="https://hub.docker.com/">dockerhub</a>
+
+Finally, can stop the container:
+
+![stop](./images/8-stopContainer.png)
+
+Notice the container has been deleted due to --rm option
+
+<hr>
+
+### Part B:
+
+This part consists in deploying our container into our Debian VM in Azure.
+
+First we will a repo in dockerhub and pull our created image
+
+Creating the repo:
+
+![repo](./images/create_repo.png)
+
+rename the image and push the image to the repo:
+
+![rename-push](./images/ren_and_push.png)
+
+check that the image is pulled successfully
+
+![hub](./images/dockerhub.png)
+
+Now pull the image to our VM:
+
+![pull](./images/pull.png)
+
+Add an inbound port rule at port 80 (http)
+
+![azure-rule](./images/add_inbound_port.png)
+
+then in the VM we just run the following command:
+
+``` 
+$ docker run -d -p 80:80 <image name>
+```
+and then we acces to our public ip generated in the azure portal and see the web page:
+
+![page-up](./images/up.png)
